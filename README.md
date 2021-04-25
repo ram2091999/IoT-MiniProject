@@ -25,7 +25,7 @@
 │    └── model.py
 ├── colab                        # Playground for notebooks
 │    ├── IOT_IntrusionDetection_EDA_BaseModels.ipynb
-│    └── Main_Model_Deep_AE.ipynb
+│    └── Main_Model_DeepAE.ipynb
 ├── docs                         # Deploy docs
 │    ├── _config.yml
 │    ├── about.md
