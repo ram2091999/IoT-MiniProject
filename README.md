@@ -44,7 +44,7 @@
 # EDA Demo and Base Model Interactive Notebook 
 <div align="center">
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges)
-</div>   
+</div>    
 
 # References
 
