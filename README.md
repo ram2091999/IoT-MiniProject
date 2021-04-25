@@ -1,3 +1,6 @@
+<div align="center">
+
 # Detection of IoT Botnet Attacks - A Deep Learning Approach
 
-- Deep AE Code and Data - https://drive.google.com/file/d/1CXiyvKTD2EmJP9T8kbhID0lZ618w_qGW/view?usp=sharing
+| **[ [```Slides (PDF)```](<documentation/IoT Mini Project - Proposal.pdf>) ]** | **[ [```Model Figures```](<documentation/IoT_Botnet_models.png>) ]** |
+|:-------------------:|:-------------------:|:-------------------:|
