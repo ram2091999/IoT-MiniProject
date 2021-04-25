@@ -41,6 +41,11 @@
      └── train.py
 ```     
 
+# EDA Demo and Base Model Interactive Notebook 
+<div align="center">
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ierv-R_v7x1V-qxIzqcekYGGN1EZzqaA?usp=sharing)
+</div>   
+
 # References
 
 Base dataset -> https://archive.ics.uci.edu/ml/machine-learning-databases/00442/
