@@ -42,14 +42,19 @@
 ```     
 
 # References
+
+Base dataset -> https://archive.ics.uci.edu/ml/machine-learning-databases/00442/
+
+
 ```BibTeX
-@misc{Sergei2019,
-  author = {Sergei Tsimbalist},
-  title = {Botnet Traffic Analysis},
-  year = {2019},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/sergts/botnet-traffic-analysis}}
-}
+@ARTICLE{8490192,  
+author={Meidan, Yair and Bohadana, Michael and Mathov, Yael and Mirsky, Yisroel and Shabtai, Asaf and Breitenbacher, Dominik and Elovici, Yuval},  
+journal={IEEE Pervasive Computing},   
+title={N-BaIoT—Network-Based Detection of IoT Botnet Attacks Using Deep Autoencoders},   
+year={2018},  
+volume={17},  
+number={3},  
+pages={12-22},  
+doi={10.1109/MPRV.2018.03367731}}
 ```
 
