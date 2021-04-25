@@ -1,6 +1,6 @@
 <div align="center">
 
-# Detecting IoT Botnet Attacks - :radioactive:  The MiraiShield Project :radioactive: 
+# :radioactive:  The MiraiShield Project :radioactive: 
 
 
 | **[ [```Initial Dataset```](<http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT>) ]** | **[ [```Project Proposal```](<documentation/IoT Mini Project - Proposal.pdf>) ]** 
@@ -12,7 +12,7 @@
 
 </div>
 
-# Project Structure
+# Project Structure - Detecting IoT Botnet Attacks
 ```                   
 ├── README.md                   
 ├── EDA                          # EDA, NAS and Self-Organising Maps
