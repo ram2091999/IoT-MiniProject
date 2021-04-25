@@ -35,3 +35,8 @@
      ├── test.py
      └── train.py
 ```     
+
+<div align="center">
+
+<img src="documentation/IoT_Botnet_models.png">
+</div>
