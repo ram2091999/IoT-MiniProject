@@ -153,14 +153,7 @@ from keras.callbacks import ModelCheckpoint, TensorBoard
 from keras.optimizers import SGD
 
 def train(top_n_features=10):
-    df = pd.concat((pd.read_csv(f) for f in iglob('../data/**/benign_traffic.csv', recursive=True)), ignore_index=True)
 
-    fisher = pd.read_csv('../fisher.csv')
-    features = fisher.iloc[0:int(top_n_features)]['Feature'].values
-    df = df[list(features)]
-
-    # Dataset splits
-    x_train, x_opt, x_test = np.split(df.sample(frac=1, random_state=17), [int(1/3*len(df)), int(2/3*len(df))])
     scaler = StandardScaler()
     scaler.fit(x_train.append(x_opt))
     x_train = scaler.transform(x_train)
@@ -192,19 +185,21 @@ def train(top_n_features=10):
     print("Min is %.5f" % mse.min())
     print("Max is %.5f" % mse.max())
     print("Std is %.5f" % mse.std())
-    tr = mse.mean() + mse.std()
+    
+    
+    error_dev = mse.mean() + mse.std()
 
     with open(f'threshold_{top_n_features}', 'w') as t:
-        t.write(str(tr))
-    print(f"Threshold is {tr}")
+        t.write(str(error_dev))
+    print(f"Threshold is {error_dev}")
 
     x_test_predictions = model.predict(x_test)
     print("MSE on the test set")
     mse_test = np.mean(np.power(x_test - x_test_predictions, 2), axis=1)
-    over_tr = mse_test > tr
-    false_positives = sum(over_tr)
+    over_ed = mse_test > error_dev
+    false_positives = sum(over_ed)
     test_size = mse_test.shape[0]
-    print(f"{false_positives} FP on the dataset without attacks of size {test_size}")
+    print(f"{false_positives} FP on the dataset without attacks - size {test_size}")
     
 
 def autoenc_model(input_dim):
@@ -218,10 +213,6 @@ def autoenc_model(input_dim):
     autoencoder.add(Dense(int(0.75 * input_dim), activation="tanh"))
     autoencoder.add(Dense(input_dim))
     return autoencoder
-
-
-if __name__ == '__main__':
-    train(*sys.argv[1:])
 
 ```
 
