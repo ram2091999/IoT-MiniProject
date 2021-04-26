@@ -1,23 +1,23 @@
 ## Inspiration
 
-There are billions of connected devices in 2021. This number is estimated to grow five fold in the next couple of years. If anything can stop IoT from taking over humanity, it is the security issues that arise with its pulic usage. Various malwares like the Mirai malware can take down a network and the currect methods are not very effective agains it. **We have coded a deep learning model to tackle these threats**.
+There are billions of connected devices in 2021, and the applications with devices connected to the Internet are booming exponentially. This number is estimated to grow five fold in the next couple of years. If anything can stop IoT from taking over humanity, it is the security issues that arise with its public usage. Various malwares like the Mirai malware can take down a network and the current methods are not very effective agains it. **We have shown how a Deep learning model can tackle these threats**.
 
-## What is Mirai
+## What is Mirai?
 
-Mirai is a vicious malware that turns any IoT network into a netwok controlled by bots. This netwok of bots is called **Botnet** and this Botnet is used to disrupt the traffic of the network by overwhelming the network with a flood of requests. This is called **distributed denial-of-service (DDoS) attack**. If the default username and password id not changed, Mirai can log into the netwok and attack it.
+Mirai is a vicious malware that turns any IoT network into a network controlled by bots. This network of bots is called **Botnet** and this Botnet is used to disrupt the traffic of the network by overwhelming the network with a flood of requests. This is called **distributed denial-of-service (DDoS) attack**. If the default username and password is not changed, Mirai can log into the network and attack it.
 
-## Deep learning
+## Deep Learning
 
-Deep learning is a technique of Machine learning that uses artificial neural netwok. If we analyse the network traffic, we'll be able to find which is Mirai attack and which is not. Lets say a network receives x requests per second normally. If it suddenly receives 2000x requests per second continuously, we can conclude its due to Mirai. So, if we're given the data about the network traffic, we can use that data to train a deep learning model to tell if it's infected by Mirai or not. 
+Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks. If we analyse the network traffic, we'll be able to find which is Mirai attack and which is not. Lets say a network receives x requests per second normally. If it suddenly receives 2000x requests per second continuously, we can conclude its due to Mirai. So, if we're given the data about the network traffic, we can use that data to train a deep learning model to tell if it's infected by Mirai or not. 
 
-After searching the internet for a while, we found a dataset in the internet. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to train our deeplearning model. We've attached the code in this documentaion.
+In order to pre-train our model, we found an open-sourced dataset. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The Keras-like code has been demonstrated in this documentation, which can further be utilised .
 
 
 ## Traing the Model
 
 ### First attempt - Model A
 
-We created a neural network with input layer of dimension 115 and then subsequent dense network layers of dimensions 10,40,10,1,11 and a softmax activation function. 
+We created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 10,40,10,1,11 followed by a Softmax activation function. 
 The code:
 
 ```python
@@ -63,11 +63,15 @@ def main():
 if __name__ == "__main__":
     main()   
 ```
+
+<div align = "center">
 The accuracy of this model was 0.855.
+</div>    
+    
 
 ### Second Attempt - Model B
 
-This time we created a neural network with input layer of dimension 115 and then subsequent dense network layers of dimensions 32,72,32,1,11 and a softmax activation function. 
+This time we created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 32,72,32,1,11 followed by a Softmax activation function. 
 The code:
 ```python
 #imports
@@ -113,7 +117,15 @@ if __name__ == "__main__":
     main()   
 
 ```
+
+<div align = "center">
 The accuracy of this model is 0.909
+</div>
+
+
+Models A and B are just an intelligent combination of multiple stages composed of upsampling and downsampling the feature space in order to simulate an expand-reduce transformation. This heuristic of designing our model does not perform as well as we require it to, as some information involving correlation between different features in the hidden dimensions is lost. Additionally, in the end, we apply a Softmax layer to obtain the probability distribution amongst all the 11 classes for easy classification into benign and the multiple sub-classes of malicious.
+
+
 
 ### Third Attempt - Model C
 
@@ -212,5 +224,8 @@ if __name__ == '__main__':
     train(*sys.argv[1:])
 
 ```
+
+<div align = "center">
 The accuracy of this model is 0.992.
+</div>    
 
