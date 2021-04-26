@@ -13,7 +13,7 @@ Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks.
 In order to pre-train our model, we found an open-sourced dataset. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The Keras-like code has been demonstrated in this documentation, which can further be utilised .
 
 
-## Traing the Model
+## Training the Model
 
 ### First attempt - Model A
 
