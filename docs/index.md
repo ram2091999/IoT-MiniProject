@@ -230,16 +230,6 @@ The accuracy of this model is 0.992.
 </div>    
 
 
-### EDA Demo and Base Model Interactive Notebook 
-
-<div align="center">
-    
-<a href="https://colab.research.google.com/drive/1Ierv-R_v7x1V-qxIzqcekYGGN1EZzqaA?usp=sharing">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/ width="200" height="30">
-</a>
-
-</div>    
-
 ### References
 
 
