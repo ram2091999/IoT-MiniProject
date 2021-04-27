@@ -51,7 +51,14 @@
 
 # References
 
-Base dataset -> https://archive.ics.uci.edu/ml/machine-learning-databases/00442/
+```BibTeX
+@misc{Dua:2019 ,
+author = "Dua, Dheeru and Graff, Casey",
+year = "2017",
+title = "{UCI} Machine Learning Repository",
+url = "http://archive.ics.uci.edu/ml",
+institution = "University of California, Irvine, School of Information and Computer Sciences" }
+```
 
 
 ```BibTeX
