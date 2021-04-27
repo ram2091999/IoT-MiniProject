@@ -122,14 +122,17 @@ if __name__ == "__main__":
 
 <div align = "center">
 The accuracy of this model is 0.909
+    
 </div>
+
+
 
 
 **Models A and B are just an intelligent combination of multiple stages composed of upsampling and downsampling the feature space in order to simulate an expand-reduce transformation. This heuristic of designing our model does not perform as well as we require it to, as some information involving correlation between different features in the hidden dimensions is lost. Additionally, in the end, we apply a Softmax layer to obtain the probability distribution amongst all the 11 classes for easy classification into benign and the multiple sub-classes of malicious.**
 
 
 
-### Third Attempt - Model C
+### Third Attempt - Model C Part 1 - Benign vs Malicious
 
 An autoencoder is a neural network trained to reconstruct its inputs after they have been compressed. It consists of an encoder and a decoder part, which each consists of Linear layers in our case. The compression ensures that the network learns meaningful concepts, mainly the relationships between its input features. If we train the autoencoder solely on benign instances, it will successfully reconstruct normal observations but fail to reconstruct abnormal observations. 
 
