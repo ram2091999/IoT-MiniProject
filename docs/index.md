@@ -234,7 +234,7 @@ The accuracy of this model is 0.992.
 
 The accuracy is plotted and shown below:
 
-![Accuracy](assets/accuracy.jpeg)
+![Accuracy](assets/Figure_1.png)
 
 
 
