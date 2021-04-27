@@ -14,7 +14,15 @@
 
 # Project Structure - Detecting IoT Botnet Attacks
 ```                   
-├── README.md                   
+├── README.md  
+├── .idea                       
+│    ├── .gitignore
+│    ├── IoT-MiniProject.iml
+│    ├── misc.xml
+│    ├── modules.xml
+│    ├── vcs.xml
+│    └── inspectionProfiles
+│       └── profiles_settings.xml
 ├── EDA                          # EDA, NAS and Self-Organising Maps
 │    ├── bilinear.py
 │    ├── features.py
@@ -29,15 +37,27 @@
 │    └── Main_Model_DeepAE.ipynb
 ├── docs                         # Deploy docs
 │    ├── _config.yml
-│    ├── about.md
-│    └── index.md
+│    ├── index.md
+│    └── assets
+│       ├── Figure_1.png
+│       ├── IoTPipeline.png
+│       ├── IoT_Botnet_models.png
+│       ├── IoT_Botnet_models_new.png
+│       ├── IoT_Modelkey.png
+│       ├── abcd.png
+│       ├── conf_C.png
+│       ├── conf_D.png
+│       └── r.jpeg
 ├── documentation                # Documentation of Project
 │    ├── IoT Mini Project - Proposal.pdf
 │    ├── IoT_Botnet_models.png
 │    ├── IoT_Modelkey.png
 │    ├── model2.png
 │    └── nn.svg
-└── Model_C                      # Proposed model - Baseline
+├── Model_D                      # Proposed model - Attack Classifier
+│    ├── test.py
+│    └── train.py
+└── Model_C                      # Proposed model - Anomaly Detector
      ├── test.py
      └── train.py
 ```     
