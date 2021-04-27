@@ -247,3 +247,6 @@ doi={10.1109/MPRV.2018.03367731}}
 
 
 
+#### A Visual representation of the models
+
+![Models](assets/IoT_Botnet_models.png)
