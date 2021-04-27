@@ -8,7 +8,7 @@
 
 # Model Diagram
 
-<img src="documentation/IoT_Botnet_models.png">
+<img src="docs/assets/IoT_Botnet_models_new.png">
 
 </div>
 
