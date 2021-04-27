@@ -8,6 +8,9 @@ There are billions of connected devices in 2021, and the applications with devic
 
 Mirai is a vicious malware that turns any IoT network into a network controlled by bots. This network of bots is called **Botnet** and this Botnet is used to disrupt the traffic of the network by overwhelming the network with a flood of requests. This is called **distributed denial-of-service (DDoS) attack**. If the default username and password is not changed, Mirai can log into the network and attack it.
 
+##What is Bashlite?
+Bashlite was used in large-scale **DDoS attacks** in 2014, but it has since crossed over to infecting IoT devices. In its previous iterations, Bashlite exploited **Shellshock** to gain a foothold into the vulnerable devices. An attacker can then remotely issue commands particularly, to launch DDoS attacks, and download other files to the compromised devices.
+
 ## Deep Learning
 
 Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks. If we analyse the network traffic, we'll be able to find which is Mirai attack and which is not. Lets say a network receives x requests per second normally. If it suddenly receives 2000x requests per second continuously, we can conclude its due to Mirai. So, if we're given the data about the network traffic, we can use that data to train a deep learning model to tell if it's infected by Mirai or not. 
