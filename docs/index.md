@@ -232,13 +232,10 @@ The accuracy of this model is 0.992.
 
 ## Result 
 
-The accuracy is plotted and shown below:
+The accuracies of our models are shown below:
 
+    
 ![Accuracy](assets/Figure_1.png)
-
-
-
-
 
 
 
