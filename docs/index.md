@@ -221,6 +221,26 @@ The accuracy of this model is 0.992.
 </div>    
 
 
+#### A Visual representation of the models
+
+![Models](assets/IoT_Botnet_models.png)
+
+![ModelKey](assets/IoT_Modelkey.png)
+
+
+## Result 
+
+The accuracy is plotted and shown below:
+
+![Accuracy](assets/accuracy.jpeg)
+
+
+
+
+
+
+
+
 ### References
 
 ```BibTeX
@@ -247,6 +267,3 @@ doi={10.1109/MPRV.2018.03367731}}
 
 
 
-#### A Visual representation of the models
-
-![Models](assets/IoT_Botnet_models.png)
