@@ -132,7 +132,7 @@ The accuracy of this model is 0.909
 
 
 
-### Third Attempt - Model C Part 1 - Benign vs Malicious
+### Model C - Benign vs Malicious
 
 An autoencoder is a neural network trained to reconstruct its inputs after they have been compressed. It consists of an encoder and a decoder part, which each consists of Linear layers in our case. The compression ensures that the network learns meaningful concepts, mainly the relationships between its input features. If we train the autoencoder solely on benign instances, it will successfully reconstruct normal observations but fail to reconstruct abnormal observations. 
 
@@ -225,6 +225,7 @@ def autoenc_model(input_dim):
 The accuracy of this model is 0.992.
 </div>    
 
+### Model D - Benign vs Mirai vs Bashlite (Code in Repo) 
 
 #### A Visual representation of the models
 
