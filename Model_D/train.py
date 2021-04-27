@@ -24,23 +24,26 @@ from keras.optimizers import Adam
 
 
 def load_data():
-    print('Loading data')
-    print('Loading gafgyt data')
+
+    print('Loading GAFGYT data')
     df_gafgyt = pd.concat((pd.read_csv(f) for f in iglob('/content/botnet-traffic-analysis/data/**/gafgyt_attacks/*.csv', recursive=True)), ignore_index=True)
-    print('Loaded, shape: ')
+    print('Gafgyt - shape: ')
     print(df_gafgyt.shape)
     df_gafgyt['class'] = 'gafgyt'
-    print('Loading mirai data')
+    
+    print('Loading MIRAI data')
     df_mirai = pd.concat((pd.read_csv(f) for f in iglob('/content/botnet-traffic-analysis/data/**/mirai_attacks/*.csv', recursive=True)), ignore_index=True)
-    print('Loaded, shape: ')
+    print('Mirai - shape: ')
     print(df_mirai.shape)
     df_mirai['class'] = 'mirai'
-    print('Loading benign data')
+    
+    print('Loading BENIGN data')
     df_benign = pd.concat((pd.read_csv(f) for f in iglob('/content/botnet-traffic-analysis/data/**/benign_traffic.csv', recursive=True)), ignore_index=True)
-    print('Loaded, shape: ')
+    print('Benign - Shape: ')
     print(df_benign.shape)
     df_benign['class'] = 'benign'
-    df = df_benign.append(df_gafgyt.sample(n=df_benign.shape[0], random_state=17)).append(df_mirai.sample(n=df_benign.shape[0], random_state=17))
+    
+    df = df_benign.append(df_gafgyt.sample(n=df_benign.shape[0], random_state=42)).append(df_mirai.sample(n=df_benign.shape[0], random_state=42))
     return df
 
 
@@ -95,12 +98,12 @@ def train_with_data(top_n_features = None, df = None):
     print('Model evaluation')
     print('Loss, Accuracy')
     print(model.evaluate(x_test, y_test))
-    y_pred_proba = model.predict(x_test)
-    y_pred = np.argmax(y_pred_proba, axis=1)
-    cnf_matrix = confusion_matrix(np.argmax(y_test.values, axis=1), y_pred)
+    y_pred_probs = model.predict(x_test)
+    y_pred = np.argmax(y_pred_probs, axis=1)
+    conf_matrix = confusion_matrix(np.argmax(y_test.values, axis=1), y_pred)
     print('Confusion matrix')
-    print('benign  gafgyt  mirai')
-    print(cnf_matrix)
+    print('BENIGN  GAFGYT  MIRAI')
+    print(conf_matrix)
 
 if __name__ == '__main__':
     train(*sys.argv[1:])
