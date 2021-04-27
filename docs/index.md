@@ -19,7 +19,7 @@ In order to pre-train our model, we found an open-sourced dataset. [Link to the 
 
 ### First attempt - Model A
 
-We created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 10,40,10,1,11 followed by a Softmax activation function. 
+We created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 10, 40, 10, 1, 11 followed by a Softmax activation function. 
 The code:
 
 ```python
@@ -73,7 +73,7 @@ The accuracy of this model was 0.855.
 
 ### Second Attempt - Model B
 
-This time we created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 32,72,32,1,11 followed by a Softmax activation function. 
+This time we created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 32, 72, 32, 1, 11 followed by a Softmax activation function. 
 The code:
 ```python
 #imports
