@@ -230,6 +230,9 @@ def autoenc_model(input_dim):
 The accuracy of this model is 0.992.
 </div>    
 
+![Confusion_C](assets/conf_C.png)
+
+
 ### Model D - Benign vs Mirai vs Bashlite - Attack Classifier
 
 This model is used to classify the given attack into Benign, Mirai or Gafgyt (Bashlite).
@@ -314,6 +317,9 @@ def train_with_data(top_n_features = None, df = None):
 <div align = "center">
 The accuracy of this model is 0.998.
 </div> 
+
+
+![Confusion_D](assets/conf_D.png)
 
 
 #### A Visual representation of the models
