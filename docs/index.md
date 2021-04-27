@@ -328,7 +328,7 @@ The accuracy of this model is 0.998.
 The accuracies of our models are shown below:
 
     
-![Accuracy](assets/Figure_1.png)
+![Accuracy](assets/abcd.png)
 
 
 
