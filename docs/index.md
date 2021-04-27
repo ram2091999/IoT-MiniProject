@@ -136,7 +136,7 @@ The accuracy of this model is 0.909
 
 
 
-### Model C - Benign vs Malicious
+### Model C - Benign vs Malicious - Anomaly Detector
 
 An autoencoder is a neural network trained to reconstruct its inputs after they have been compressed. It consists of an encoder and a decoder part, which each consists of Linear layers in our case. The compression ensures that the network learns meaningful concepts, mainly the relationships between its input features. If we train the autoencoder solely on benign instances, it will successfully reconstruct normal observations but fail to reconstruct abnormal observations. 
 
@@ -230,9 +230,86 @@ def autoenc_model(input_dim):
 The accuracy of this model is 0.992.
 </div>    
 
-### Model D - Benign vs Mirai vs Bashlite (Code in Repo) 
+### Model D - Benign vs Mirai vs Bashlite - Attack Classifier
 
 This model is used to classify the given attack into Benign, Mirai or Gafgyt (Bashlite).
+
+The code:
+```python
+# Python Imports
+
+import sys
+import os
+from glob import iglob
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+import pickle
+
+# Scikit-learn imports 
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
+
+# Keras imports 
+from keras.models import model_from_yaml
+from keras.models import Model, Sequential
+from keras.layers import Input, Dense, Activation
+from keras.callbacks import ModelCheckpoint, TensorBoard
+from keras.optimizers import Adam
+
+
+def create_model(input_dim, add_hidden_layers, hidden_layer_size):
+    model = Sequential()
+    model.add(Dense(hidden_layer_size, activation="tanh", input_shape=(input_dim,)))
+    for i in range(add_hidden_layers):
+        model.add(Dense(hidden_layer_size, activation="tanh"))
+    model.add(Dense(3))
+    model.add(Activation('softmax'))
+    return model
+
+def train(top_n_features = None):
+    df = load_data()
+    train_with_data(top_n_features, df)
+
+def train_with_data(top_n_features = None, df = None):
+    X = df.drop(columns=['class'])
+    if top_n_features is not None:
+        fisher = pd.read_csv('/content/botnet-traffic-analysis/data/top_features_fisherscore.csv')
+        features = fisher.iloc[0:int(top_n_features)]['Feature'].values
+        X = X[list(features)]
+    Y = pd.get_dummies(df['class'])
+    print('Splitting data')
+    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+    scaler = StandardScaler()
+    print('Transforming data')
+    scaler.fit(x_train)
+    input_dim = X.shape[1]
+    scalerfile = f'./models/scaler_{input_dim}.sav'
+    pickle.dump(scaler, open(scalerfile, 'wb'))
+    x_train = scaler.transform(x_train)
+    x_test = scaler.transform(x_test)
+    print('Creating a model')
+    
+    model = create_model(input_dim, 1, 128)
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    cp = ModelCheckpoint(filepath=f'./models/model_{input_dim}.h5',
+                               save_best_only=True,
+                               verbose=0)
+    tb = TensorBoard(log_dir=f'./logs',
+                histogram_freq=0,
+                write_graph=True,
+                write_images=True)
+    epochs = 25
+    model.fit(x_train, y_train,
+                    epochs=epochs,
+                    batch_size=256,
+                    validation_data=(x_test, y_test),
+                    verbose=1,
+                    callbacks=[tb, cp])
+
+```
+
 
 <div align = "center">
 The accuracy of this model is 0.998.
