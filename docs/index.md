@@ -142,7 +142,8 @@ An autoencoder is a neural network trained to reconstruct its inputs after they 
 
 When a significant reconstruction error has been calculated, the given observations are classified as an anomaly. We optimize the parameters and hyperparameters of each trained model so that when applied to unseen traffic, the model maximizes the true positive rate and minimizes the false positive rate (wrongly marking benign data as malicious).
 
-The Keras Deep Learning framework was used for modeling and evaluation in Python. 
+The Keras Deep Learning framework was used for modeling and evaluation in Python.  This model is used to classify the collected data points into Benign or a Malicious Attack.
+
 The code:
 ```python
 # Initial Python package imports
@@ -230,6 +231,13 @@ The accuracy of this model is 0.992.
 </div>    
 
 ### Model D - Benign vs Mirai vs Bashlite (Code in Repo) 
+
+This model is used to classify the given attack into Benign, Mirai or Gafgyt (Bashlite).
+
+<div align = "center">
+The accuracy of this model is 0.998.
+</div> 
+
 
 #### A Visual representation of the models
 
