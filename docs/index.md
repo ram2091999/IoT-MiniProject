@@ -228,7 +228,7 @@ The accuracy of this model is 0.992.
 
 #### A Visual representation of the models
 
-![Models](assets/IoT_Botnet_models.png)
+![Models](assets/IoT_Botnet_models_new.png)
 
 ![ModelKey](assets/IoT_Modelkey.png)
 
