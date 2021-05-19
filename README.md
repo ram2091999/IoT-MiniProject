@@ -10,7 +10,16 @@
 
 <img src="docs/assets/IoT_Botnet_models_new.png">
 
+     
+# Model Stats   
+ 
+<img src="docs/assets/time_plots.png">
+     
+<img src="docs/assets/size_plots.png">
+     
 </div>
+     
+   
 
 # Project Structure - Detecting IoT Botnet Attacks
 ```                   
@@ -62,6 +71,8 @@
      └── train.py
 ```     
 
+    
+     
 # EDA Demo and Base Model Interactive Notebook 
 <div align="center">
 <a href="https://colab.research.google.com/drive/1Ierv-R_v7x1V-qxIzqcekYGGN1EZzqaA?usp=sharing">
