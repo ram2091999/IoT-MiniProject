@@ -13,9 +13,9 @@
      
 # Model Stats   
  
-<img src="docs/assets/time_plots.png">
+<img src="docs/assets/repo_time.png">
      
-<img src="docs/assets/size_plots.png">
+<img src="docs/assets/repo_size.png">
      
 </div>
      
