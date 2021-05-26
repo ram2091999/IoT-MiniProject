@@ -298,7 +298,7 @@ We plot the **Training time, Inference time and Model Sizes** as shown below. We
 
 ### References
 
-```BibTeX
+```bibtex
 @misc{Dua:2019 ,
 author = "Dua, Dheeru and Graff, Casey",
 year = "2017",
@@ -308,7 +308,7 @@ institution = "University of California, Irvine, School of Information and Compu
 ```
 
 
-```BibTeX
+```bibtex
 @ARTICLE{8490192,  
 author={Meidan, Yair and Bohadana, Michael and Mathov, Yael and Mirsky, Yisroel and Shabtai, Asaf and Breitenbacher, Dominik and Elovici, Yuval},  
 journal={IEEE Pervasive Computing},   
