@@ -1,4 +1,7 @@
 
+https://user-images.githubusercontent.com/49593646/119641471-5268a300-be37-11eb-900e-dd2a28477fec.mp4
+
+
 <h1> The MiraiShield Project </h1>
     
 
@@ -267,7 +270,7 @@ The below diagrams represent the Hardware Flow and our Setup. We will be uploadi
 
 You can watch our **Video Demonstration** of the models we designed here! Just click on the video.
 
-[![Hardware Video](https://img.youtube.com/vi/In_BqB0dU_0/0.jpg)](https://www.youtube.com/watch?v=In_BqB0dU_0)
+[![Hardware Video](https://img.youtube.com/vi/In_BqB0dU_0/0.jpg)]
 
 
 ---
