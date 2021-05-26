@@ -268,14 +268,17 @@ The below diagrams represent the Hardware Flow and our Setup. We will be uploadi
 You can watch our **Video Demonstration** of the models we designed here! Just click on the video.
 
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include youtubePlayer.html id="In_BqB0dU_0" %}
 
 ---
 
+<div align = "center">
+    
 This is our Hardware setup for the experiment!
 
 ![Setup](assets/hardware.png)
 
+</div>
 
 ---
 
