@@ -340,8 +340,13 @@ The below diagrams represent the Hardware Flow and our Setup. We will be uploadi
 ![Flow](assets/hardware_mirai.png)
 
 
-![Setup](assets/hardware.png)
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/In_BqB0dU_0/0.jpg)](https://www.youtube.com/watch?v=In_BqB0dU_0)
+
+
+<div align = "center">
+![Setup](assets/hardware.png)
+</div> 
 
 ---
 
