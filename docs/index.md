@@ -1,3 +1,5 @@
+# S SRIVARADHARAJAN             T N RAM             SAI VIGNESH             SAI MITHERAN
+
 ## Inspiration
 
 There are billions of connected devices in 2021, and the applications with devices connected to the Internet are booming exponentially. This number is estimated to grow five fold in the next couple of years. If anything can stop IoT from taking over humanity, it is the security issues that arise with its public usage. Various malwares like the Mirai malware can take down a network and the current methods are not very effective agains it. **We have shown how a Deep learning model can tackle these threats**.
