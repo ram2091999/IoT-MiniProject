@@ -6,8 +6,8 @@
 
 </samp>
 
-| **[ [```Base Dataset```](<http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT>) ]** | **[ [```Project Proposal```](<documentation/IoT Mini Project - Proposal.pdf>) ]** | **[ [```Project Video```](<https://www.youtube.com/watch?v=In_BqB0dU_0>) ]** | **[ [```Project Page```](<https://ram2091999.github.io/IoT-MiniProject/>) ]** 
-|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+| **[ [```Base Dataset```](<http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT>) ]** | **[ [```Project Proposal```](<documentation/IoT Mini Project - Proposal.pdf>) ]** | **[ [```Project Video```](<https://www.youtube.com/watch?v=In_BqB0dU_0>) ]** | **[ [```Project Page```](<https://ram2091999.github.io/IoT-MiniProject/>) ]** | **[ [```Project Report```](<https://docs.google.com/document/d/1leubc6VwzkP6Exf25Op5lqnUz2wfG1zXrxOxjFbLwMA/edit?usp=sharing>) ]** 
+|:-------------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 
 <samp>
  
