@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-
+  <style>
+    
+  .name {
+    color: #229954;
+    border-color: #0000ff; 
+    background-color: #99A3A4;
+  } 
+    
+    </style>  
+    
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -27,10 +36,10 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         
-        <a href="https://github.com/ram2091999" class="btn">Ram T N</a>
-        <a href="https://smj007.github.io/" class="btn">Sai Mitheran</a>
-        <a href="https://github.com/Srivaradharajans" class="btn">Srivaradharajan S</a>
-        <a href="https://github.com/vsaivignesh" class="btn">V Sai Vignesh</a>
+        <a href="https://github.com/ram2091999" class="btn name">Ram T N</a>
+        <a href="https://smj007.github.io/" class="btn name">Sai Mitheran</a>
+        <a href="https://github.com/Srivaradharajans" class="btn name">Srivaradharajan S</a>
+        <a href="https://github.com/vsaivignesh" class="btn name">V Sai Vignesh</a>
         <br>
       
       {% if site.github.is_project_page %}
