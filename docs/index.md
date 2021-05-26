@@ -18,6 +18,7 @@ Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks.
 
 In order to pre-train our model, we found an open-sourced dataset. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The Keras-like code has been demonstrated in this documentation, which can further be utilised .
 
+---
 
 ## Training the Model
 
@@ -74,6 +75,7 @@ if __name__ == "__main__":
 The accuracy of this model was 0.855.
 </div>    
     
+---
 
 ### Second Attempt - Model B
 
@@ -135,6 +137,7 @@ The accuracy of this model is 0.909
 **Models A and B are just an intelligent combination of multiple stages composed of upsampling and downsampling the feature space in order to simulate an expand-reduce transformation. This heuristic of designing our model does not perform as well as we require it to, as some information involving correlation between different features in the hidden dimensions is lost. Additionally, in the end, we apply a Softmax layer to obtain the probability distribution amongst all the 11 classes for easy classification into benign and the multiple sub-classes of malicious.**
 
 
+---
 
 ### Model C - Benign vs Malicious - Anomaly Detector
 
@@ -232,6 +235,7 @@ The accuracy of this model is 0.992.
 
 ![Confusion_C](assets/conf_C.png)
 
+---
 
 ### Model D - Benign vs Mirai vs Bashlite - Attack Classifier
 
@@ -321,6 +325,7 @@ The accuracy of this model is 0.998.
 
 ![Confusion_D](assets/conf_D.png)
 
+---
 
 #### A Visual representation of the models
 
@@ -328,15 +333,20 @@ The accuracy of this model is 0.998.
 
 ![ModelKey](assets/IoT_Modelkey.png)
 
+---
+
 The below diagrams represent the Hardware Flow and our Setup. We will be uploading the final video shortly. In the video below, you can observe the functioning of all 4 models. We have implemented **Model A and B** for exhaustive purposes of finding the subclass of BotNet attack, **Model C** for the detection of an anomaly, and **Model D** for the classification of an attack into its major classes of **Benign**, **Mirai** and **Bashlite**.
 
 ![Flow](assets/hardware_mirai.png)
+
 
 <div align = "center">
     
 ![Setup](assets/hardware.png)
 
 </div>
+
+---
 
 ## Result 
 
@@ -345,12 +355,15 @@ The accuracies of our models are shown below:
     
 ![Accuracy](assets/abcd.png)
 
+---
+
 We plot the Training time, Inference time and Model Sizes as shown below. We can observe that all 4 models we have designed can be implemented in real-time, since they have a low inference time and small size in the order of **KiloBytes**. Hence, the model can be deployed on the cloud, and even on edge devices using **Tensorflow Lite**.  
  
 ![Time](assets/repo_time.png)
      
 ![Size](assets/repo_size.png)
 
+---
 
 ### References
 
