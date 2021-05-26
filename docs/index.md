@@ -268,7 +268,7 @@ The below diagrams represent the Hardware Flow and our Setup. We will be uploadi
 You can watch our **Video Demonstration** of the models we designed here! Just click on the video.
 
 
-https://user-images.githubusercontent.com/49593646/119641471-5268a300-be37-11eb-900e-dd2a28477fec.mp4
+{% include youtubePlayer.html id=page.youtubeId %}
 
 ---
 
