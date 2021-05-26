@@ -111,14 +111,38 @@
 
 ---    
      
-# EDA Demo and Base Model Interactive Notebook 
+<!-- # EDA Demo and Base Model Interactive Notebook 
 <div align="center">
 <a href="https://colab.research.google.com/drive/1Ierv-R_v7x1V-qxIzqcekYGGN1EZzqaA?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/ width="200" height="30">
 </a>
-</div>    
+</div>     -->
 
+</samp>     
+     
+## Demo
+     
+<samp>  
+     
+We provide an easy-to-get-started demo using Google Colab!
+
+</samp> 
+      
+This will allow you to train a basic version of our method using 
+GPUs on Google Colab. 
+
+<div align = "center">
+     
+
+| Description      | Link |
+| ----------- | ----------- |
+| EDA Demo and Base Model Interactive Notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ierv-R_v7x1V-qxIzqcekYGGN1EZzqaA?usp=sharing)|   
+    
+</div>
+     
 ---
+
+<samp>     
      
 # References
 
