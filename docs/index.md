@@ -279,7 +279,7 @@ This is our Hardware setup for the experiment!
 </div>
 
 
-<img src="https://ram2091999.github.io/IoT-MiniProject/assets/hardware.png" alt ="setup" style="display: block;margin-left: auto; margin-right: auto;" ></img>
+<img src="https://ram2091999.github.io/IoT-MiniProject/assets/hardware.png" alt ="setup" style="display: block;margin-left: auto; margin-right: auto;" >
 
 
 
