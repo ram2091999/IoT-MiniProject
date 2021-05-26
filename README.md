@@ -13,6 +13,12 @@
  
 ---
      
+# Overall Pipeline
+
+<img src="docs/assets/Overall_Task.jpg">
+          
+---
+     
 # Model Diagram
 
 <img src="docs/assets/IoT_Botnet_models_new.png">
