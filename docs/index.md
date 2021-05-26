@@ -29,10 +29,18 @@ In order to pre-train our model, we found an open-sourced dataset. [Link to the 
 
 ## Training the Model
 
-### First attempt - Model A
+#### A Visual representation of the models
+
+![Models](assets/IoT_Botnet_models_new.png)
+
+![ModelKey](assets/IoT_Modelkey.png)
+
+---
+
+### Model A
 
 We created a neural network with input layer of dimension **115** and then subsequent dense layers of dimensions **10, 40, 10, 1, 11** followed by a **Softmax activation** function. 
-The code:
+<!-- The code:
 
 ```python
 #imports
@@ -76,7 +84,7 @@ def main():
     
 if __name__ == "__main__":
     main()   
-```
+``` -->
 
 <div align = "center">
 The accuracy of this model was 0.855.
@@ -84,10 +92,10 @@ The accuracy of this model was 0.855.
     
 ---
 
-### Second Attempt - Model B
+### Model B
 
 This time we created a neural network with input layer of dimension **115** and then subsequent dense layers of dimensions **32, 72, 32, 1, 11** followed by a **Softmax activation** function. 
-The code:
+<!-- The code:
 ```python
 #imports
 from sklearn.model_selection import train_test_split
@@ -131,15 +139,15 @@ def main():
 if __name__ == "__main__":
     main()   
 
-```
+``` -->
 
 <div align = "center">
-The accuracy of this model is 0.909
+The accuracy of this model is 0.909.
+   
     
 </div>
 
-
-
+&nbsp;
 
 Models A and B are just an intelligent combination of multiple stages composed of **upsampling** and **downsampling** the feature space in order to simulate an **expand-reduce transformation**. This heuristic of designing our model does not perform as well as we require it to, as some information involving correlation between different features in the hidden dimensions is lost. Additionally, in the end, we apply a **Softmax layer** to obtain the probability distribution amongst all the 11 classes for easy classification into benign and the multiple sub-classes of malicious.
 
@@ -235,6 +243,8 @@ def autoenc_model(input_dim):
     autoencoder.add(Dense(input_dim))
     return autoencoder
 
+if __name__ == "__main__":
+    train()
 ```
 
 <div align = "center">
@@ -323,7 +333,9 @@ def train_with_data(top_n_features = None, df = None):
                     validation_data=(x_test, y_test),
                     verbose=1,
                     callbacks=[tb, cp])
-
+                    
+if __name__ == "__main__":
+    train()           
 ```
 
 
@@ -336,13 +348,6 @@ The accuracy of this model is 0.998.
 
 ---
 
-#### A Visual representation of the models
-
-![Models](assets/IoT_Botnet_models_new.png)
-
-![ModelKey](assets/IoT_Modelkey.png)
-
----
 
 The below diagrams represent the Hardware Flow and our Setup. We will be uploading the final video shortly. In the video below, you can observe the functioning of all 4 models. We have implemented **Model A and B** for exhaustive purposes of finding the subclass of BotNet attack, **Model C** for the detection of an anomaly, and **Model D** for the classification of an attack into its major classes of **Benign**, **Mirai** and **Bashlite**.
 
