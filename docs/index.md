@@ -5,7 +5,7 @@
 
 ## Inspiration
 
-There are billions of connected devices in 2021, and the applications with devices connected to the Internet are booming exponentially. This number is estimated to grow five fold in the next couple of years. If anything can stop IoT from taking over humanity, it is the security issues that arise with its public usage. Various malwares like the Mirai malware can take down a network and the current methods are not very effective against it. **We have shown how a Deep learning model can tackle these threats**.
+Billions of devices are connected to the internet, and the applications of these devices are booming exponentially. This number is estimated to grow five-fold in the next couple of years. If anything can stop IoT from taking over humanity, it is the security issues that arise with its public usage. Various malwares like the Mirai malware can take down a network and the current methods are not very effective against it. **We have shown how a Deep learning model can tackle these threats**.
 
 ![Main_Task](assets/Overall_Task.jpg)
 
@@ -68,7 +68,7 @@ Models A and B are just an intelligent combination of multiple stages composed o
 
 An **autoencoder** is a neural network trained to **reconstruct** its inputs after they have been compressed. It consists of an **encoder** and a **decoder** part, which each consists of Linear layers in our case. The compression ensures that the network learns meaningful concepts, mainly the relationships between its input features. If we train the autoencoder solely on benign instances, it will successfully reconstruct normal observations but fail to reconstruct abnormal observations. 
 
-When a significant **reconstruction error** has been calculated, the given observations are classified as an anomaly. We optimize the parameters and hyperparameters of each trained model so that when applied to unseen traffic, the model maximizes the **true positive rate** and minimizes the **false positive rate** (wrongly marking benign data as malicious).
+When a significant **reconstruction error** has been calculated, the given observations are classified as an anomaly. We optimize the parameters and hyperparameters of each trained model so that when applied to unseen traffic, the model maximizes the **true positive rate** (correctly marking benign data) and minimizes the **false positive rate** (wrongly marking benign data as malicious).
 
 The Keras Deep Learning framework was used for modeling and evaluation in Python. This model is used to classify the collected data points into Benign or a Malicious Attack.
 
