@@ -83,7 +83,7 @@
      └── train.py
 ```     
 
-    
+---    
      
 # EDA Demo and Base Model Interactive Notebook 
 <div align="center">
@@ -92,6 +92,8 @@
 </a>
 </div>    
 
+---
+     
 # References
 
 </samp>
@@ -104,7 +106,7 @@ title = "{UCI} Machine Learning Repository",
 url = "http://archive.ics.uci.edu/ml",
 institution = "University of California, Irvine, School of Information and Computer Sciences" }
 ```
-
+---
 
 ```BibTeX
 @ARTICLE{8490192,  
