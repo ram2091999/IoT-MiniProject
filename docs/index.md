@@ -344,9 +344,14 @@ The below diagrams represent the Hardware Flow and our Setup. We will be uploadi
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/In_BqB0dU_0/0.jpg)](https://www.youtube.com/watch?v=In_BqB0dU_0)
 
 
-<div align = "center">
+<div>
+
+  <img src="https://ram2091999.github.io/IoT-MiniProject/assets/hardware.png" alt="Hardware"/>
+</div>
+
+
 ![Setup](assets/hardware.png)
-</div> 
+
 
 ---
 
