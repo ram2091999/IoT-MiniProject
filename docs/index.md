@@ -354,7 +354,7 @@ The accuracies of our models are shown below:
 
 ---
 
-We plot the Training time, Inference time and Model Sizes as shown below. We can observe that all 4 models we have designed can be implemented in real-time, since they have a low inference time and small size in the order of **KiloBytes**. Hence, the model can be deployed on the cloud, and even on edge devices using **Tensorflow Lite**.  
+We plot the **Training time, Inference time and Model Sizes** as shown below. We can observe that all 4 models we have designed can be implemented in real-time, since they have a low inference time and small size in the order of **KiloBytes**. Hence, the model can be deployed on the cloud, and even on edge devices using **Tensorflow Lite**.  
  
 ![Time](assets/repo_time.png)
      
