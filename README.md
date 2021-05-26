@@ -1,25 +1,37 @@
 <div align="center">
 
+<samp>
+     
 # :radioactive:  The MiraiShield Project :radioactive: 
 
+</samp>
 
 | **[ [```Initial Dataset```](<http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT>) ]** | **[ [```Project Proposal```](<documentation/IoT Mini Project - Proposal.pdf>) ]** | **[ [```Task```](<docs/assets/IoTPipeline.png>) ]** 
 |:-------------------:|:-------------------:|:-------------------:|
 
+<samp>
+ 
+---
+     
 # Model Diagram
 
 <img src="docs/assets/IoT_Botnet_models_new.png">
-
+     
+---
      
 # Model Stats   
  
 <img src="docs/assets/repo_time.png">
      
 <img src="docs/assets/repo_size.png">
+
+---
+     
+</samp>
      
 </div>
      
-   
+<samp>  
 
 # Project Structure - Detecting IoT Botnet Attacks
 ```                   
@@ -82,6 +94,8 @@
 
 # References
 
+</samp>
+     
 ```BibTeX
 @misc{Dua:2019 ,
 author = "Dua, Dheeru and Graff, Casey",
