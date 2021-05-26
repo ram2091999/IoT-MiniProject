@@ -339,13 +339,16 @@ The below diagrams represent the Hardware Flow and our Setup. We will be uploadi
 
 ![Flow](assets/hardware_mirai.png)
 
+---
 
+You can watch our **Video Demonstration** of the models we designed here! Just click on the video.
 
 [![Hardware Video](https://img.youtube.com/vi/In_BqB0dU_0/0.jpg)](https://www.youtube.com/watch?v=In_BqB0dU_0)
 
 
+---
 
-
+This is our Hardware setup for the experiment!
 
 ![Setup](assets/hardware.png)
 
