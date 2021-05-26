@@ -68,6 +68,10 @@
 │       ├── abcd.png
 │       ├── conf_C.png
 │       ├── conf_D.png
+│       ├── repo_size.png
+│       ├── repo_time.png
+│       ├── size_plots.png
+│       ├── time_plots.png   
 │       └── r.jpeg
 ├── documentation                # Documentation of Project
 │    ├── IoT Mini Project - Proposal.pdf
@@ -78,6 +82,10 @@
 ├── Model_D                      # Proposed model - Attack Classifier
 │    ├── test.py
 │    └── train.py
+├── hardware                     # Botnet Server and Socket Connections
+│    ├── arduino.ino
+│    ├── deepLearningCheck.py
+│    └── mirai.py     
 └── Model_C                      # Proposed model - Anomaly Detector
      ├── test.py
      └── train.py
