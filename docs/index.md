@@ -272,13 +272,11 @@ You can watch our **Video Demonstration** of the models we designed here! Just c
 
 ---
 
-<div align = "center">
     
 This is our Hardware setup for the experiment!
 
-![Setup](assets/hardware.png)
 
-</div>
+![Setup](assets/hardware.png)
 
 ---
 
