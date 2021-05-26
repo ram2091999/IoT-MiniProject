@@ -26,12 +26,22 @@
 <img src="docs/assets/repo_size.png">
 
 ---
+  
+# Hardware Flow and Implementation  
+ 
+<img src="docs/assets/hardware_mirai.png">     
+     
+--- 
+     
+<img src="docs/assets/hardware.png">     
      
 </samp>
      
 </div>
      
 <samp>  
+     
+---     
 
 # Project Structure - Detecting IoT Botnet Attacks
 ```                   
@@ -68,6 +78,8 @@
 │       ├── abcd.png
 │       ├── conf_C.png
 │       ├── conf_D.png
+│       ├── hardware.png
+│       ├── hardware_mirai.png     
 │       ├── repo_size.png
 │       ├── repo_time.png
 │       ├── size_plots.png
