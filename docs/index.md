@@ -2,7 +2,7 @@
 
 There are billions of connected devices in 2021, and the applications with devices connected to the Internet are booming exponentially. This number is estimated to grow five fold in the next couple of years. If anything can stop IoT from taking over humanity, it is the security issues that arise with its public usage. Various malwares like the Mirai malware can take down a network and the current methods are not very effective agains it. **We have shown how a Deep learning model can tackle these threats**.
 
-![Task](assets/IoTPipeline.png)
+![Main_Task](assets/Overall_Task.jpg)
 
 ## What is Mirai?
 
@@ -17,6 +17,8 @@ Bashlite was used in large-scale **DDoS attacks** in 2014, but it has since cros
 Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks. If we analyse the network traffic, we'll be able to find which is Mirai attack and which is not. Lets say a network receives x requests per second normally. If it suddenly receives 2000x requests per second continuously, we can conclude its due to Mirai. So, if we're given the data about the network traffic, we can use that data to train a deep learning model to tell if it's infected by Mirai or not. 
 
 In order to pre-train our model, we found an open-sourced dataset. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The Keras-like code has been demonstrated in this documentation, which can further be utilised .
+
+![Task](assets/IoTPipeline.png)
 
 ---
 
