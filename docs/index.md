@@ -276,9 +276,12 @@ You can watch our **Video Demonstration** of the models we designed here! Just c
     
 This is our Hardware setup for the experiment!
 
-![Setup](assets/hardware.png)
-
 </div>
+
+
+<img src="https://ram2091999.github.io/IoT-MiniProject/assets/hardware.png" alt ="setup" style="display: block;margin-left: auto; margin-right: auto;" ></img>
+
+
 
 ---
 
