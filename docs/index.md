@@ -21,7 +21,7 @@ Bashlite was used in large-scale **DDoS attacks** in 2014, but it has since cros
 
 Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks. If we analyse the network traffic, we'll be able to find which is Mirai attack and which is not. Lets say a network receives x requests per second normally. If it suddenly receives 2000x requests per second continuously, we can conclude its due to Mirai. So, if we're given the data about the network traffic, we can use that data to train a deep learning model to tell if it's infected by Mirai or not. 
 
-In order to pre-train our model, we used an open-sourced dataset. ([Link to the dataset])(http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The **Keras-like code** has been demonstrated in this documentation, which can further be utilised.
+In order to pre-train our model, we used an open-sourced [dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). The **Keras-like code** has been demonstrated in this documentation, which can further be utilised.
 
 ![Task](assets/IoTPipeline.png)
 
