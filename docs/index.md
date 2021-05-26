@@ -16,7 +16,7 @@ Bashlite was used in large-scale **DDoS attacks** in 2014, but it has since cros
 
 Deep learning is a subdomain of Machine Learning (ML) that uses Neural networks. If we analyse the network traffic, we'll be able to find which is Mirai attack and which is not. Lets say a network receives x requests per second normally. If it suddenly receives 2000x requests per second continuously, we can conclude its due to Mirai. So, if we're given the data about the network traffic, we can use that data to train a deep learning model to tell if it's infected by Mirai or not. 
 
-In order to pre-train our model, we found an open-sourced dataset. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The Keras-like code has been demonstrated in this documentation, which can further be utilised .
+In order to pre-train our model, we found an open-sourced dataset. [Link to the dataset](http://archive.ics.uci.edu/ml/datasets/detection_of_IoT_botnet_attacks_N_BaIoT). We used this dataset to pre-train our model. The **Keras-like code** has been demonstrated in this documentation, which can further be utilised.
 
 ![Task](assets/IoTPipeline.png)
 
@@ -26,7 +26,7 @@ In order to pre-train our model, we found an open-sourced dataset. [Link to the 
 
 ### First attempt - Model A
 
-We created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 10, 40, 10, 1, 11 followed by a Softmax activation function. 
+We created a neural network with input layer of dimension **115** and then subsequent dense layers of dimensions **10, 40, 10, 1, 11** followed by a **Softmax activation** function. 
 The code:
 
 ```python
@@ -81,7 +81,7 @@ The accuracy of this model was 0.855.
 
 ### Second Attempt - Model B
 
-This time we created a neural network with input layer of dimension 115 and then subsequent dense layers of dimensions 32, 72, 32, 1, 11 followed by a Softmax activation function. 
+This time we created a neural network with input layer of dimension **115** and then subsequent dense layers of dimensions **32, 72, 32, 1, 11** followed by a **Softmax activation** function. 
 The code:
 ```python
 #imports
@@ -136,20 +136,21 @@ The accuracy of this model is 0.909
 
 
 
-**Models A and B are just an intelligent combination of multiple stages composed of upsampling and downsampling the feature space in order to simulate an expand-reduce transformation. This heuristic of designing our model does not perform as well as we require it to, as some information involving correlation between different features in the hidden dimensions is lost. Additionally, in the end, we apply a Softmax layer to obtain the probability distribution amongst all the 11 classes for easy classification into benign and the multiple sub-classes of malicious.**
+Models A and B are just an intelligent combination of multiple stages composed of **upsampling** and **downsampling** the feature space in order to simulate an **expand-reduce transformation**. This heuristic of designing our model does not perform as well as we require it to, as some information involving correlation between different features in the hidden dimensions is lost. Additionally, in the end, we apply a **Softmax layer** to obtain the probability distribution amongst all the 11 classes for easy classification into benign and the multiple sub-classes of malicious.
 
 
 ---
 
 ### Model C - Benign vs Malicious - Anomaly Detector
 
-An autoencoder is a neural network trained to reconstruct its inputs after they have been compressed. It consists of an encoder and a decoder part, which each consists of Linear layers in our case. The compression ensures that the network learns meaningful concepts, mainly the relationships between its input features. If we train the autoencoder solely on benign instances, it will successfully reconstruct normal observations but fail to reconstruct abnormal observations. 
+An **autoencoder** is a neural network trained to **reconstruct** its inputs after they have been compressed. It consists of an **encoder** and a **decoder** part, which each consists of Linear layers in our case. The compression ensures that the network learns meaningful concepts, mainly the relationships between its input features. If we train the autoencoder solely on benign instances, it will successfully reconstruct normal observations but fail to reconstruct abnormal observations. 
 
-When a significant reconstruction error has been calculated, the given observations are classified as an anomaly. We optimize the parameters and hyperparameters of each trained model so that when applied to unseen traffic, the model maximizes the true positive rate and minimizes the false positive rate (wrongly marking benign data as malicious).
+When a significant **reconstruction error** has been calculated, the given observations are classified as an anomaly. We optimize the parameters and hyperparameters of each trained model so that when applied to unseen traffic, the model maximizes the **true positive rate** and minimizes the **false positive rate** (wrongly marking benign data as malicious).
 
-The Keras Deep Learning framework was used for modeling and evaluation in Python.  This model is used to classify the collected data points into Benign or a Malicious Attack.
+The Keras Deep Learning framework was used for modeling and evaluation in Python. This model is used to classify the collected data points into Benign or a Malicious Attack.
 
-The code:
+The **code**:
+
 ```python
 # Initial Python package imports
 import sys
@@ -241,9 +242,10 @@ The accuracy of this model is 0.992.
 
 ### Model D - Benign vs Mirai vs Bashlite - Attack Classifier
 
-This model is used to classify the given attack into Benign, Mirai or Gafgyt (Bashlite).
+This model is used to classify the given attack into **Benign, Mirai or Gafgyt** (Bashlite).
 
-The code:
+The **code**:
+
 ```python
 # Python Imports
 
